@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">LayoutDemo</div>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </header>
+        
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <main class="main-content">
+            <section class="content">
+                <h1>Welcome to Our Responsive Layout</h1>
+                <p>This page demonstrates the use of CSS Grid and Flexbox for creating responsive layouts that adapt to different screen sizes.</p>
+                
+                <div class="cards-container">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/card1/400/250.jpg" alt="Card image 1">
+                        </div>
+                        <div class="card-content">
+                            <h2>Card Title 1</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/card2/400/250.jpg" alt="Card image 2">
+                        </div>
+                        <div class="card-content">
+                            <h2>Card Title 2</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/card3/400/250.jpg" alt="Card image 3">
+                        </div>
+                        <div class="card-content">
+                            <h2>Card Title 3</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>About Us</h3>
+                    <p>We are a company dedicated to creating beautiful and functional web experiences using modern design principles and technologies.</p>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>Categories</h3>
+                    <ul class="widget-list">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>Recent Posts</h3>
+                    <ul class="widget-list">
+                        <li><a href="#">Understanding CSS Grid</a></li>
+                        <li><a href="#">Flexbox Layout Patterns</a></li>
+                        <li><a href="#">Responsive Design Tips</a></li>
+                        <li><a href="#">Mobile-First Approach</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LayoutDemo</h4>
+                    <p>Creating responsive layouts with modern CSS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LayoutDemo. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
